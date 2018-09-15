@@ -39,7 +39,7 @@ Directory | Description
 `/var` | **Variable files**. Contains files that are expected to grow over time. For example: Log files (`/var/log`), database files (`/var/lib`),  temp files that persist across reboots (`/var/tmp`).
 `/tmp` | **Temporary files**. Contains temporary files created by users and by the system. Files under this directory are deleted once the system is rebooted.
 `/usr` | **User programs**. Contains binaries, libraries, documentation, source-code, etc for second level programs. For example: `usr/bin` contains binary files for user programs if user binaries are not present under `/bin`.
-`/home` | **Home directory**. This is the home directory where all users store their personal files. For example: `/home/talktopri`.
+`/home` | **Home directory**. Also represented by the `~` (tilde) symbol. This is the home directory where all users store their personal files. For example: `/home/talktopri`.
 `/boot` | **Boot loader files**. Contains boot loader related files, such as the Kernel `initrd`, `vmlinux`, `grub` files, etc.
 `/lib` | **System libraries**. Contains library files support to the binaries located under `/bin` and `/sbin`.
 `/opt` | **Optional applications**. Contains other applications for individual vendor, such as Java, Oracle, etc.
