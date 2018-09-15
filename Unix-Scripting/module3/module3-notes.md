@@ -10,8 +10,8 @@ Symbol | Description | Example
 `{}` | Search range. `{x}`: match _exactly_ x; `{x,y}`: match x _or_ y, but no more than y. | `cp {*.doc,*.pdf} ~`: copy any .doc or .pdf files to the user's home directory. Spaces are not allowed after the comma.
 `-` | Hyphen used within `[]` denotes a range of characters.
 `!` | Negative. Meaning it does not match <pattern>. | `[!A-Z]??`: 3 character filename that does not begin with an uppercase letter.
-`^` | Line starts with <pattern>. | `^file`: filename starts with "file".
-`$` | Line ends with <pattern>. | `ls | grep X$`: Lists all files in the directory that end in "X".
+`^` | Line starts with [pattern]. | `^file`: filename starts with "file".
+`$` | Line ends with [pattern]. | `ls `|` grep X$`: Lists all files in the directory that end in "X".
 
 ## File creation
 
@@ -124,4 +124,3 @@ Option | Description | Example
 `>> file1.txt` | Output will be appended to the file. | `wc file1.txt >> output.txt`
 `2>file1.txt` | Redirects standard error to the file. | `cat unexistentfile.txt 2>error.log`
 `file1.txt 2>&1` | Merges standard error and standard output into the file. | `cat foo.txt > output.txt 2>&1`
- 
