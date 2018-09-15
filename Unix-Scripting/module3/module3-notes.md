@@ -11,7 +11,7 @@ Symbol | Description | Example
 `-` | Hyphen used within `[]` denotes a range of characters.
 `!` | Negative. Meaning it does not match <pattern>. | `[!A-Z]??`: 3 character filename that does not begin with an uppercase letter.
 `^` | Line starts with [pattern]. | `^file`: filename starts with "file".
-`$` | Line ends with [pattern]. | `ls `|` grep X$`: Lists all files in the directory that end in "X".
+`$` | Line ends with [pattern]. | `ls \| grep X$`: Lists all files in the directory that end in "X".
 
 ## File creation
 
