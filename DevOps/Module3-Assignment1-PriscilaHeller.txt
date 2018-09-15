@@ -1,0 +1,45 @@
+Problem Statement
+
+Hooli Co. have put Harry and Kane to implement a new set of features in their feature software. Both started working separately, making their own copies of the same source code. Now, it has become difficult for them to track the changes they’ve made in the original code and are finding it difficult to merge their code together.
+
+Action Items
+
+•Create two separate branches from master
+
+$ git branch pri-feat1
+$ git branch pri-feat2
+$ git branch
+
+* master
+  pri-feat1
+  pri-feat2
+
+•Make changes in the same function of the source code in both the branches
+
+$ git checkout pri-feat1
+$ vi samplefile.txt
+$ git add samplefile.txt
+$ git commit -m "changed line 2"
+
+$ git checkout pri-feat2
+$ vi samplefile.txt
+$ git add samplefile.txt
+$ git commit -m "changed line 2"
+
+•Merge branch1 into the master
+
+$ git checkout master
+Switched to branch 'master'
+$ git merge pri-feat1
+
+•Try and merge branch2 into the master(merge conflict should arise)
+
+$ git merge pri-feat2
+CONFLICT (content): Merge conflict in samplefile.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+•Install a merge tool of your choice and resolve the merge conflict using git merge tool command
+
+$ git config --global merge.tool kdiff3
+$ git mergetool
+$ git commit -a -m "fixed merge conflicts"

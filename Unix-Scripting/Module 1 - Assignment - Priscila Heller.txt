@@ -1,0 +1,26 @@
+Name: Priscila Heller
+
+## Assignment - Module 1
+
+List out the Internal and External Unix commands as more as you can by checking in Command prompt
+
+### Internal Unix commands:
+
+- help
+- cd
+- pwd
+- history
+- exit
+- logout
+- times
+
+
+### External Unix commands:
+
+- grep
+- cat
+- tail
+- calendar
+- date
+- cron
+- mv

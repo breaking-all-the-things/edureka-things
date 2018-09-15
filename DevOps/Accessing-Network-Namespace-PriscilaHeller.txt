@@ -1,0 +1,77 @@
+Problem Statement
+
+Three Developers are working in Aperture Technology co. Their company want a better Source Code Management System because the earlier tool had the tendency to save redundant code. Multiple Developers working simultaneously on same block of code also caused problems. You are Mike, and your manager has given you the task of moving the company’s code base to git and Github.
+
+Action Items
+
+•Create a local git repository and move the entire code base to it
+
+$ mkdir Git-assignment
+$ cd Git-assignment/
+$ git init
+Initialized empty Git repository in /Users/talktopri/Desktop/Edureka/DevOps/Git-assignment/.git/
+$ ls -lah
+total 0
+drwxr-xr-x   3 talktopri  staff    96B Sep  4 19:14 .
+drwxr-xr-x   4 talktopri  staff   128B Sep  4 19:14 ..
+drwxr-xr-x  10 talktopri  staff   320B Sep  4 19:14 .git
+$ mv /Users/talktopri/Downloads/sample-project .
+$ ls -lah
+total 0
+drwxr-xr-x   4 talktopri  staff   128B Sep  4 19:15 .
+drwxr-xr-x   4 talktopri  staff   128B Sep  4 19:14 ..
+drwxr-xr-x  10 talktopri  staff   320B Sep  4 19:14 .git
+
+
+•Create a new branch for a new feature you want to add to the application
+
+$ git branch pri-feat1
+$ git branch
+* master
+  pri-feat1
+
+•Merge back the created branch with the master branch
+
+$ git merge pri-feat1
+Updating dd06632..83eac94
+Fast-forward
+ sample-project/css/site.css            | 134 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ sample-project/fonts/segoeuil.ttf      | Bin 0 -> 808120 bytes
+ sample-project/img/cloneWhite.svg      |   1 +
+ sample-project/img/deployWhite.svg     |   1 +
+ sample-project/img/lightbulbWhite.svg  |   1 +
+ sample-project/img/stackWhite.svg      |   1 +
+ sample-project/img/successCloudNew.svg |   1 +
+ sample-project/img/tweetThis.svg       |   1 +
+ sample-project/index.html              |  58 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ samplefile.txt                         |   1 +
+ 10 files changed, 199 insertions(+)
+ create mode 100755 sample-project/css/site.css
+ create mode 100755 sample-project/fonts/segoeuil.ttf
+ create mode 100755 sample-project/img/cloneWhite.svg
+ create mode 100755 sample-project/img/deployWhite.svg
+ create mode 100755 sample-project/img/lightbulbWhite.svg
+ create mode 100755 sample-project/img/stackWhite.svg
+ create mode 100755 sample-project/img/successCloudNew.svg
+ create mode 100755 sample-project/img/tweetThis.svg
+ create mode 100755 sample-project/index.html
+ create mode 100644 samplefile.txt
+TalkToPri: $ git branch
+* master
+  pri-feat1
+
+•Create a remote repository
+
+https://github.com/breaking-all-the-things/edureka-things
+
+•Push the local repository to company’s remote repository
+
+$ git push origin master
+Enter passphrase for key '/Users/talktopri/.ssh/id_rsa':
+Counting objects: 23, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (23/23), 461.37 KiB | 0 bytes/s, done.
+Total 23 (delta 0), reused 0 (delta 0)
+To github.com:breaking-all-the-things/edureka-things.git
+   a1cfe9d..939bff5  master -> master

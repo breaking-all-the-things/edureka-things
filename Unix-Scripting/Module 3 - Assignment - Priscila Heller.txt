@@ -1,0 +1,37 @@
+Name: Priscila Heller
+
+## Assignment - Module 3
+
+- Write the differences between Files, Directories and Sub-directories
+
+  - File is a container to store contents, records and information.
+  - Directory is a collection of files and sub-directories.
+  - Sub-directories are directories within a directory.
+
+- Without delete the contents of files how can you make the file as empty?
+
+Here are a few options (please consider the file which will have its contents deleted to be called `delete_contents.txt`):
+
+  - Option 1: $ > delete_contents.txt
+  - Option 2: $ touch empty_file.txt; cp empty_file.txt delete_contents.txt
+
+
+- Using pipe and re-direction, write some script/example
+
+  $ cat exceptions.log | grep timeout > timeout_errors.txt
+
+- Write a script to redirect the error message of a command in a file
+
+  $ cat non_existent_file.txt 2> error.txt
+
+- Differences between  "less" and "more" command
+
+  - less command allows page scrolling forwards and backwards.
+  - more command only allows forward scrolling.
+  - less also does not read the whole file before it starts outputting its contents on the screen, so it is a good option for large files.
+
+- Describe various types of file creation in Unix/Linux with differences
+
+  - touch: can create one or many empty files with one single command i.e: $ touch file1 file2 file3
+  - vi: similar to "touch", it can create single or multiple files. vi also creates the file in write/edit mode.
+  - cat >: can create one file at a time in write mode.

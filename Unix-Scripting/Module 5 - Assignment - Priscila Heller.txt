@@ -1,0 +1,31 @@
+Name: Priscila Heller
+
+## Assignment - Module 5
+
+- Write in one line on command prompt to create a file having permission as 555 if possible.
+
+```
+$ touch permission.txt; chmod 555 permission.txt
+$
+$
+$ ls -l
+-r-xr-xr-x  1 talktopri  staff     0 Aug 26 20:43 permission.txt
+```
+
+- Write in one line on command prompt to create a directory having permission as 644 if possible.
+
+```
+$ mkdir newdir; chmod 644 newdir
+$
+$ ls -l
+drw-r--r--  2 talktopri  staff    64 Aug 26 20:47 newdir
+-r-xr-xr-x  1 talktopri  staff     0 Aug 26 20:43 permission.txt
+
+
+- If "ifconfig" command will not work then how can you get the IP address of your Unix/Linux system?
+
+$ /sbin/ifconfig
+
+or
+
+$ ip addr show 

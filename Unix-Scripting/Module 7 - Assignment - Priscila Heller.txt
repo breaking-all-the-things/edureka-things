@@ -1,0 +1,83 @@
+Name: Priscila Heller
+
+## Assignment - Module 7
+
+- What are the different ways to execute  a shell script and what are the differences between them ?
+
+$ sh file.sh
+
+A child shell will be created to run the script above. No execute permission is necessary to run the shell script this way.
+
+or
+
+$ ./file.sh
+
+The current shell will execute the command. Execute permission is necessary to the file.sh file in order to run the script this way.
+
+- Write a shell script program to display the current year calander, current date and time, current working directory and user details who are logged in currently.
+
+$ vi sample.sh
+
+#!/bin/sh
+
+# Display current year calendar
+
+cal 2018
+
+# Display current date and time
+
+date
+
+# Display current working directory
+
+pwd
+
+# Display user details who are logged in currently
+
+who
+
+- How to check  a process id 1234 whether it is running or not ?
+
+$ ps -p 1234
+
+- How to kill the last background command ?
+
+$ kill $!
+
+- List out the some Unix commands which contains one letter, two letter, three letter and four letter.
+
+$ w
+$ ps; ls; cd; cp; ln; mv; rm; tr
+$ cal; cat; man; pwd; sed; tee
+$ tail; less; more; grep; echo; find; kill
+
+- List some internal and external commands by checking with "type"  command.
+
+External commands:
+
+$ type w
+w is hashed (/usr/bin/w)
+$ type cat
+cat is hashed (/bin/cat)
+$ type ps
+ps is hashed (/bin/ps)
+
+Internal commands:
+
+$ type echo
+echo is a shell builtin
+$ type cd
+cd is a shell builtin
+$ $ type pwd
+pwd is a shell builtin
+
+
+- What is the differences between User defined variable and Environment variable ?
+
+User defined variable is a variable defined by the user.
+Environment variables are used to define the environment and are accessible by different programs. They control some properties of the shell.
+
+- What is the differences between Local and Global variable ?
+
+Global variables are used within all supported shells in Unix.
+Local variables is only known within that specific shell and will no longer exist once the shell is terminated.

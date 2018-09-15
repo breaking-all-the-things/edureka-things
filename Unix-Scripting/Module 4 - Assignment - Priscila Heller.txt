@@ -1,0 +1,73 @@
+Name: Priscila Heller
+
+## Assignment - Module 4
+
+- Write the differences between comm, diff and cmp with example.
+
+The "cmp" command compares file1 and file2. Then, it displays where the first mismatch was found. Please see the example below:
+
+```
+$ cat edureka_file1.txt
+Hi, this message will go into edureka_file1.txt
+$ cat edureka_file2.txt
+This will go into edureka_file2.txt
+$
+$ cmp edureka_file1.txt edureka_file2.txt
+edureka_file1.txt edureka_file2.txt differ: char 1, line 1
+```
+
+The "comm" command displays the contents of the files we used as arguments in 3 different columns: the first column shows the unique data from file1, the second column shows the unique data from file2 and the third column shows what both files have in common. Please see the example below:
+
+```
+$ cat FILE_1.txt
+Hello.
+I'm a new file.
+My name is FILE_1.txt.
+$
+$ cat FILE_2.txt
+Hi there.
+I'm a new file.
+My name is FILE_2.txt.
+$
+$ comm FILE_1.txt FILE_2.txt
+Hello.
+	Hi there.
+		I'm a new file.
+My name is FILE_1.txt.
+	My name is FILE_2.txt.
+```
+
+The "diff" command outputs the lines that are different between two files. Please see the example below:
+
+```
+$ cat FILE_1.txt
+Hello.
+I'm a new file.
+My name is FILE_1.txt.
+$
+$ cat FILE_2.txt
+Hi there.
+I'm a new file.
+My name is FILE_2.txt.
+$
+$ diff FILE_1.txt FILE_2.txt
+1c1
+< Hello.
+---
+> Hi there.
+3c3,4
+< My name is FILE_1.txt.
+---
+> My name is FILE_2.txt.
+>
+```
+
+- Write a command or script to display only normal files from your current directory.
+
+$ ls -l | grep ^-
+$ find . -type f -name "*"
+
+- Write a command or script to display only the directories which are present under your current directory.
+
+$ ls -l | grep ^d
+$ find . -type d -name "*"

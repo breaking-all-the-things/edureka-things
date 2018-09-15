@@ -1,0 +1,27 @@
+Name: Priscila Heller
+
+## Assignment - Module 6
+
+- Delete 100 lines from vi editor using single command.
+
+100dd
+
+- Delete matched search pattern from a file using sed and vi editor.
+
+Using sed:
+
+$ sed '/pattern/d' file.txt
+
+Using vi:
+
+:%s/pattern//g
+
+The query above will delete all occurrences of "pattern" in the file.
+
+- Write a sed command to print the lines that do not contain the word "run".
+
+$ sed '/run/!p'
+
+- Write a command to replace the second occurrence of the word "bat" with "ball" in a file?
+
+$ sed 's/bat/ball/2' < filename
