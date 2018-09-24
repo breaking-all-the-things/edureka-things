@@ -42,17 +42,17 @@
 
 Category | Indicator | Description
 -------- | --------- | -----------
-User Class    u | Owner
-              g | Group
-              o | Others
-            | a | All
-Operation     = | Assign permission absolutely
-              + | Adds a permission
-             | - | Removes a permission
-Permission   r | Read
-             w | Write
-             x | Execute
-             s | Set user or Group ID
+User Class | u <br/>   Owner <br/>
+             g <br/>   Group <br/>
+             o <br/>   Others <br/>
+             a       | All <br/>
+Operation |  = <br/>   Assign permission absolutely <br/>
+             + <br/>   Adds a permission <br/>
+             -       | Removes a permission
+Permission | r <br/>   Read <br/>
+             w <br/>   Write <br/>
+             x <br/>   Execute <br/>
+             s       | Set user or Group ID
 
 - Using the `ls -l` command, we can see information related to the file and directory permissions:
 
