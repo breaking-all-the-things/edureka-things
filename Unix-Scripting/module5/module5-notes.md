@@ -54,8 +54,8 @@ a | All <br/>
 Indicator | Description
 --------- | -----------
 = | Assign permission absolutely
-+ | Adds a permission
-- | Removes a permission
+\+ | Adds a permission
+\- | Removes a permission
 
 - **Permissions**
 
