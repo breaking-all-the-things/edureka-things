@@ -179,7 +179,7 @@ $ find / -perm 775 # searches for all the files with permissions 755 in the root
 $
 $
 $ find / -size +100M -exec rm -rf {} \; # searches and deletes all files that are over 100M in size.
-
+```
 ----  
 
 ## Compressing and archiving Files
