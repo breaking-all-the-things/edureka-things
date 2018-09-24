@@ -40,19 +40,31 @@
 
 #### Permission Indicators
 
-Category | Indicator | Description
--------- | --------- | -----------
-User Class | u <br/>   Owner <br/>
-             g <br/>   Group <br/>
-             o <br/>   Others <br/>
-             a       | All <br/>
-Operation |  = <br/>   Assign permission absolutely <br/>
-             + <br/>   Adds a permission <br/>
-             -       | Removes a permission
-Permission | r <br/>   Read <br/>
-             w <br/>   Write <br/>
-             x <br/>   Execute <br/>
-             s       | Set user or Group ID
+- **User Class**
+
+Indicator | Description
+--------- | -----------
+u | Owner
+g | Group
+o | Others <br/>
+a | All <br/>
+
+- **Operation**
+
+Indicator | Description
+--------- | -----------
+= | Assign permission absolutely
++ | Adds a permission
+- | Removes a permission
+
+- **Permissions**
+
+Indicator | Description | Value
+--------- | ----------- | ------
+r | Read | 4
+w | Write | 2
+x | Execute | 1
+s | Set user or Group ID | n/a
 
 - Using the `ls -l` command, we can see information related to the file and directory permissions:
 
