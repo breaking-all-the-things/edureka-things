@@ -72,7 +72,7 @@ Write command | Description
 Substitution command | Description
 -------------------- | ------------
 `sed 's/Unix/Linux/g' file.txt` | Replaces Unix with Linux globally for file.txt
-`sed 's/|/:/g' file.txt` | Replaces all `|` with `:`
+`sed 's//|/:/g' file.txt` | Replaces all `|` with `:`
 `sed '3,10s/director/manager' file.txt` | Replaces director with manager on lines 3 through 10.
 
 ----
@@ -86,7 +86,7 @@ Substitution command | Description
 
 Command | Description
 ------- | -----------
-`find /tmp -name "*.tmp" | xargs rm` | Deletes temporary files .
-`ls -1 *.txt | xargs` | Converts multi-line output into a single line.
-`ls -1 *.txt | xargs wc -l` | Counts the number of lines in each file.
-`echo a b c d e f | xargs -n 3` | Limits output per line using the `-n` flag: outputs `a b c` in one line and `d e f` in another line. 
+`find /tmp -name "*.tmp" \| xargs rm` | Deletes temporary files .
+`ls -1 *.txt /| xargs` | Converts multi-line output into a single line.
+`ls -1 *.txt /| xargs wc -l` | Counts the number of lines in each file.
+`echo a b c d e f /| xargs -n 3` | Limits output per line using the `-n` flag: outputs `a b c` in one line and `d e f` in another line. 
