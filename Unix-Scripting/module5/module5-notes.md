@@ -42,14 +42,14 @@
 
 Category | Indicator | Description
 -------- | --------- | -----------
-User Class | u | Owner
-             g | Group
-             o | Others
-             a | All
-Operation | = | Assign permission absolutely
-            + | Adds a permission
-            - | Removes a permission
-Permission | r | Read
+User Class    u | Owner
+              g | Group
+              o | Others
+            | a | All
+Operation     = | Assign permission absolutely
+              + | Adds a permission
+             | - | Removes a permission
+Permission   r | Read
              w | Write
              x | Execute
              s | Set user or Group ID
