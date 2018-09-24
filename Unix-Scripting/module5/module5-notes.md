@@ -43,16 +43,16 @@
 Category | Indicator | Description
 -------- | --------- | -----------
 User Class | u | Owner
-           | g | Group
-           | o | Others
-           | a | All
+             g | Group
+             o | Others
+             a | All
 Operation | = | Assign permission absolutely
-          | + | Adds a permission
-          | - | Removes a permission
+            + | Adds a permission
+            - | Removes a permission
 Permission | r | Read
-           | w | Write
-           | x | Execute
-           | s | Set user or Group ID
+             w | Write
+             x | Execute
+             s | Set user or Group ID
 
 - Using the `ls -l` command, we can see information related to the file and directory permissions:
 
